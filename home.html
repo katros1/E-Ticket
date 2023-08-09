@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E-Ticket</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="home.html" class="site-brand">
+                E<span>Ticket</span>
+            </a>
+
+            <div id="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aboutUs" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <header class="flex">
+        <div class="container">
+            <div class="header-title">
+                <h1>Hello, Katros</h1>
+                <p>Where do you want to go?</p>
+            </div>
+            <div class="header-form">
+                <h2>Choose your Route:</h2>
+                <form class="flex">
+                    <select class="form-control" placeholder="Destination name">
+                        <option value="1">Kigali-Muhanga</option>
+                        <option value="1">Kigali-Nyanza</option>
+                        <option value="1">Kigali-Huye</option>
+                        <option value="1">Kigali-Rusizi</option>
+                        <option value="1">Kigali-Rubavu</option>
+                    </select>
+                    <select class="form-control" placeholder="Date">
+                        <option value="2">6:00</option>
+                        <option value="2">7:30</option>
+                        <option value="2">10:00</option>
+                        <option value="2">11:00</option>
+                    </select>
+                    <input type="number" class="form-control" placeholder="Number of tickets">
+                    <a href="payment.html"><input type="button" class="btn" value="Book"></a>
+                    
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section id="featured" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">know some places we travel to</span>
+                <h2 class="lg-title">featured places</h2>
+            </div>
+
+            <div class="featured-row">
+                <div class="featured-item my-2 shadow">
+                    <img src="images/Kigali.jpeg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Kigali City
+                        </span>
+                        <div>
+                            <p class="text">Travel from Kigali to Rusizi, Kigali to southern Province(Kamonyi, Muhanga,
+                                Ruhango, Nyanza, Huye)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/Rusizi.jpeg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Rusizi, Western Province
+                        </span>
+                        <div>
+                            <p class="text">Travel from Kigali to Rusizi, Huye to Rusizi or from Rusizi to Kigali or
+                                Rusizi to Huye </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/Rubavu.jpeg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Rubavu, Western Province
+                        </span>
+                        <div>
+                            <p class="text">Travel from Rubavu to Kigali or from Kigali to Rubavu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/Huye.jpeg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Huye, Southern Provence
+                        </span>
+                        <div>
+                            <p class="text">Travel from Kigali to Rusizi, Kigali to southern Province(Kamonyi, Muhanga,
+                                Ruhango, Nyanza, Huye)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/Nyanza.jpeg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Nyanza, Southern Provence
+                        </span>
+                        <div>
+                            <p class="text">Travel from Kigali to Rusizi, Kigali to southern Province(Kamonyi, Muhanga,
+                                Ruhango, Nyanza, Huye)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/Muhanga.jpeg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Muhanga, southern Province
+                        </span>
+                        <div>
+                            <p class="text">Travel from Kigali to Rusizi, Kigali to southern Province(Kamonyi, Muhanga,
+                                Ruhango, Nyanza, Huye)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="services" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Want a bonus?</span>
+                <h2 class="lg-title">Our Bonus</h2>
+            </div>
+
+            <div class="services-row">
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-money-bill"></i>
+                    </span>
+                    <h3>Kigali - Huye</h3>
+                    <p class="text">3:00 PM</p>
+                    <p class="text">2000 RWF</p>
+                    <a href="payment.html" class="btn">Book Now</a>
+                </div>
+
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-money-bill"></i>
+                    </span>
+                    <h3>Rusizi - Kigali</h3>
+                    <p class="text">3:00 PM</p>
+                    <p class="text">2500 RWF</p>
+                    <a href="payment.html" class="btn">Book Now</a>
+                </div>
+
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-money-bill"></i>
+                    </span>
+                    <h3>Rubavu - Kigali</h3>
+                    <p class="text">3:00 PM</p>
+                    <p class="text">2300 RWF</p>
+                    <a href="payment.html" class="btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="py-4" id="aboutUs">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">
+                    E-<span>Tickect</span>
+                </a>
+                <p class="text">Booking a ticket has never been easier! Thanks to our simple app powered by great
+                    technology, you can book a ticket in just minutes.</p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Follow us on: </h2>
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Places we travel:</h2>
+                <ul>
+                    <li><a href="#">Kigali City</a></li>
+                    <li><a href="#">Rusizi</a></li>
+                    <li><a href="#">Rubavu</a></li>
+                    <li><a href="#">Huye</a></li>
+                    <li><a href="#">Nyanza</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="footer-item">
+                <h2>Partners:</h2>
+                <ul>
+                    <li><a href="#">Ritco</a></li>
+                    <li><a href="#">RURA</a></li>
+                    <li><a href="#">RTDA</a></li>
+                    <li><a href="#">Ministry of Infrastructure</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+</body>
+
+</html>

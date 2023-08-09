@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>E-Tickect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "stylesheet" href = "../css/utility.css">
+    <link rel = "stylesheet" href = "../css/style.css">
+    <link rel = "stylesheet" href = "../css/responsive.css">
+  </head>
+  <body>
+    <nav class = "navbar">
+        <div class = "container flex">
+            <a href = "../index.html" class = "site-brand">
+                E<span>Ticket</span>
+            </a>
+
+            <button type = "button" id = "navbar-show-btn" class = "flex">
+                <i class = "fas fa-bars"></i>
+            </button>
+            <div id = "navbar-collapse">
+                <button type = "button" id = "navbar-close-btn" class = "flex">
+                    <i class = "fas fa-times"></i>
+                </button>
+                <ul class = "navbar-nav">
+                    
+                    <li class = "nav-item">
+                        <a href = "register.html" class = "nav-link">Register</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "login.html" class = "nav-link">Login</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "../index.html" class = "nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="center">
+      <h1>Register</h1>
+      <form method="post">
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>First Name</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" required>
+            <span></span>
+            <label>Last Name</label>
+          </div>
+          <div class="txt_field">
+            <input type="email" required>
+            <span></span>
+            <label>Email</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" required>
+            <span></span>
+            <label>Password</label>
+          </div>
+        <div class="txt_field">
+          <input type="password" required>
+          <span></span>
+          <label>Confirm Password</label>
+        </div>
+        <a href="../home.html">
+            <input type="button" value="Register">
+        </a>
+        <div class="signup_link">
+          Already have account? <a href="login.html">LogIn</a>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
