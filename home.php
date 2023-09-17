@@ -1,10 +1,19 @@
+<?php 
+   session_start();
+
+   include("php/config.php");
+   if(!isset($_SESSION['valid'])){
+    header("Location: Login Form/login.php");
+   }
+?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>E-Ticket</title>
+    <title>URugendo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -12,21 +21,44 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/utility.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel = "stylesheet" href = "css/normalize.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
+<?php 
+            
+            $name = $_SESSION['firstname'];
+            $query = mysqli_query($con,"SELECT * FROM users WHERE firstname='$name'");
+
+            while($result = mysqli_fetch_assoc($query)){
+                $res_Uname = $result['lastname'];
+                $res_Email = $result['email'];
+            }
+
+            ?>
 
     <nav class="navbar">
         <div class="container flex">
             <a href="home.html" class="site-brand">
-                E<span>Ticket</span>
+                U<span>Rugendo</span>
             </a>
 
             <div id="navbar-collapse">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="dashboard.html" class="nav-link">Dashboard</a>
+                      <?php  
+                      
+                      if ($res_Uname == "admin") {
+                      
+                      echo "<a href='AdminDashboard/adminDashboard.html' class='nav-link'>Dashboard</a>";
+                      
+                       } else {
+                        echo "<a href='dashboard.html' class='nav-link'>Dashboard</a>";
+                       }  
+                       
+                       ?>
+                       
                     </li>
                     <li class="nav-item">
                         <a href="#aboutUs" class="nav-link">About</a>
@@ -35,19 +67,19 @@
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Logout</a>
+                        <a href="php/logout.php" class="nav-link">Logout</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
+    
 
     <header class="flex">
         <div class="container">
             <div class="header-title">
-                <h1>Hello, Katros</h1>
+                <h1>Hello, <?php echo $res_Uname ?></h1>
                 <p>Where do you want to go?</p>
             </div>
             <div class="header-form">
@@ -219,7 +251,7 @@
         <div class="container footer-row">
             <div class="footer-item">
                 <a href="index.html" class="site-brand">
-                    E-<span>Tickect</span>
+                    U<span>Rugendo</span>
                 </a>
                 <p class="text">Booking a ticket has never been easier! Thanks to our simple app powered by great
                     technology, you can book a ticket in just minutes.</p>
@@ -270,6 +302,7 @@
         </div>
     </footer>
     <!-- end of footer -->
+    <script src = "js/script.js"></script>
 </body>
 
 </html>

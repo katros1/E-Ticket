@@ -317,13 +317,13 @@ body {
   padding: 10px;
 }
 .details .recentBookings table tr td:last-child {
-  text-align: end;
+  text-align: center;
 }
 .details .recentBookings table tr td:nth-child(2) {
-  text-align: end;
+  text-align: start;
 }
 .details .recentBookings table tr td:nth-child(3) {
-  text-align: center;
+  text-align: start;
 }
 .status.delivered {
   padding: 2px 4px;
@@ -394,6 +394,35 @@ body {
   }
 }
 
+.col-sm-6 {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: 100%;
+  height: 45px;
+  
+}
+
+.col-sm-6 span {
+  width: 150px;
+}
+
+.col-sm-6 .form-control {
+  width: 100%;
+  padding-left: 5px;
+  border-width: 1px;
+  border-color: #999;
+  border-radius: 8px
+}
+
+.modal-body .btn-success {
+  background-color: #1ec6b6;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 5px;
+}
 @media (max-width: 768px) {
   .details {
     grid-template-columns: 1fr;
